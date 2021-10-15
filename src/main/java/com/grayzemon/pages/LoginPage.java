@@ -1,13 +1,12 @@
 package com.grayzemon.pages;
 
 import net.thucydides.core.annotations.DefaultUrl;
-import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
 @DefaultUrl("/login.html")
-public class LoginPage extends PageObject {
+public class LoginPage extends BasePage {
 
     public  void gotoLoginPage() {
         open();

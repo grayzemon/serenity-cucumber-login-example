@@ -1,10 +1,9 @@
 package com.grayzemon.pages;
 
-import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 
 @DefaultUrl("/index.html")
-public class HomePage extends PageObject {
+public class HomePage extends BasePage {
 
     public void gotoHomePage() {
         open();

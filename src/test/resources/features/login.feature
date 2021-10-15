@@ -1,4 +1,4 @@
-@login
+@login @allfeatures
 Feature: As a zero app security user I want to verify the functionality of the website so that
   it behaves as expected.
 

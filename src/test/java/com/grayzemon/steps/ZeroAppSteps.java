@@ -12,7 +12,6 @@ public class ZeroAppSteps {
 
     @Given("I select sign-in from the homepage")
     public void iAmOnTheHomepage() {
-        homePage.gotoHomePage();
         homePage.selectSignIn();
     }
 

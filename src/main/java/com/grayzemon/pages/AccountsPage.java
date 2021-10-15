@@ -1,13 +1,12 @@
 package com.grayzemon.pages;
 
-import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.equalTo;
 
 @DefaultUrl("account-summary.html")
-public class AccountsPage extends PageObject {
+public class AccountsPage extends BasePage {
 
     public void verifyAccountsPage() {
         final String text = findBy("//*[@id='account_summary_tab']/a").getText();
