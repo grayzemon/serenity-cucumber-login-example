@@ -2,11 +2,8 @@ package com.grayzemon.pages;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
-
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalUnit;
 
 public class BasePage extends PageObject {
     @FindBy(xpath = "//*[@id='settingsBox']/ul/li[3]/a/i")

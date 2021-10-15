@@ -1,4 +1,4 @@
-@login @allfeatures
+@login @allFeatures
 Feature: As a zero app security user I want to verify the functionality of the website so that
   it behaves as expected.
 
@@ -8,16 +8,13 @@ Feature: As a zero app security user I want to verify the functionality of the w
     When I enter valid user credentials
     Then I will be on the accounts page
 
-  @InvalidLogin
-  Scenario Outline: As a user I want to enter invalid credentials so that I can see the login error
+  @invalidLogin
+  Scenario: As a user I want to enter invalid credentials so that I can see the login error
     Given I go directly to the login page
-    When I enter the username "<Username>" and password "<Password>"
-    Then the login error message will show
-
-    Examples:
-      | Username      | Password      |
+    When I enter the invalid usernames and passwords
       | wrongusername | password      |
       | username      | wrongpassword |
       |               |               |
       | username      |               |
       |               | password      |
+    Then the expected login error message will show in each case

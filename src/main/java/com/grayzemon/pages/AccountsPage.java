@@ -1,7 +1,6 @@
 package com.grayzemon.pages;
 
 import net.thucydides.core.annotations.DefaultUrl;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 

@@ -8,6 +8,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features="src/test/resources/features",
         glue="com.grayzemon.steps",
-        tags="@allfeatures"
+        tags="@allFeatures"
 )
 public class Runner {}
