@@ -2,7 +2,7 @@
 
 Prerequisites:
 
-Java 8 JDK, Maven, Cucumber & Gherkin plugins (for InteliJ)
+Java 15 JDK, Maven, Cucumber & Gherkin plugins (for InteliJ)
 
 Configure browser, headless etc in the serenity.properties file
 
@@ -18,12 +18,10 @@ View the report in:
 
 `\target\site\serenity\index.html`
 
-Project generated using maven archetype. 
+Project generated from scratch using maven archetype. 
 
-`mvn archetype:generate
--DgroupId=com.grayzemon
--DartifactId=cucumber-serenity
--DarchetypeGroupId=net.serenity-bdd
--DarchetypeArtifactId=serenity-cucumber4-archetype
--DarchetypeVersion=2.0.81
--DinteractiveMode=false`
+pom file based on:
+
+https://github.com/serenity-bdd/serenity-cucumber-starter/blob/master/pom.xml
+
+serenity.version downgraded to 2.5.10 in the pom.xml due to error with runner file.

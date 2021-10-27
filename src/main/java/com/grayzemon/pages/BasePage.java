@@ -12,7 +12,7 @@ public class BasePage extends PageObject {
 
     public void logout() {
         setImplicitTimeout(200,ChronoUnit.MILLIS);
-        Boolean logoutShows = iconuser.isPresent();
+        boolean logoutShows = iconuser.isPresent();
         resetImplicitTimeout();
         if (logoutShows) {
             iconuser.click();
